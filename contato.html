@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="andorinea" />
+	<meta name="description" content="Papelaria e materiais criativos para um trabalho mais sussa" />
+	<meta name="keywords" content="papelaria,papelaria criativa,canetas,adesivos,bloquinhos,cadernetas,cadernos,planner" />
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Camomila</title>
+</head>
+<body>
+	<header>
+		<img src="img/banner.png" alt="Imagem de flores de camomila" id="banner" />
+	</header>
+	<nav>
+		<a class="menu" href="index.html">HOME</a>
+		<a class="menu" href="index.html#sobre">SOBRE</a>
+		<a class="menu" href="index.html#colecoes">COLEÇÕES</a>
+		<a class="menu" href="index.html#loja">LOJA</a>
+		<a class="menu" href="index.html#crie">CRIE COM A GENTE</a>
+		<a class="menu" href="contato.html">OFICINAS</a>
+	</nav>
+	<section id="contato">
+		<h1>Camomila</h1>
+		<h6>Papelaria e materiais criativos para um trabalho mais sussa.</h6>
+		<h2>Oficinas: agendamento</h2>
+		<p>Vem criar com a gente em nossas oficinas de encardenação. Agende seu horário por aqui!</p>
+		<form name="contato-camomila" action="" method="GET">
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" size="60" maxlength="150" placeholder="Digite seu nome completo" required autofocus />
+		<label for="email">Email:</label>
+		<input type="email" name="email" size="60" placeholder="usuario@email.com">
+		<label for="senha">Senha:</label>
+		<input type="password" name="senha" size="60" placeholder="some números"> 
+		<label for="cel">Celular:</label>
+		<input type="tel" name="cel" size="60" placeholder="(99) 99999 9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+		<div id="container-data-hora-aula">
+			<div class="elementos-data-hora-aula">
+				<label for="data">Data:</label>
+				<input type="date" name="data" size="60"> 
+			</div>
+			<div class="elementos-data-hora-aula">
+				<label for="hora">Hora:</label>
+				<input type="time" name="hora" size="60"> 
+			</div>
+			<div>
+				<label for="aulas">Aulas:</label>
+				<input type="number" name="aulas" size="60" min="1" max="10" step="1"> 
+			</div>
+		</div>
+		<label for="nivel">Você já tem algum conhecimento sobre encadernação?</label>
+		<select>
+			<option value="">Selecione</option>
+			<option value="basico">Básico</option>
+			<option value="intermediario">Intermediário</option>
+			<option value="avancado">Avançado</option>
+		</select>
+		<fieldset>
+			<legend>Indique sua preferência de oficina:</legend>
+			<input type="radio" name="oficina" value="cadernetas">Oficina de Cadernetas<br />
+			<input type="radio" name="oficina" value="encadernacao-japonesa">Encadernação Japonesa<br />
+		</fieldset>
+		<fieldset>
+			<legend>Tipos de papeis que deseja utilizar:</legend>
+			<input type="checkbox" name="kits" value="papelaquarela">Papel de Aquarela<br />
+			<input type="checkbox" name="kits" value="papelpolen">Papel Pólen<br />
+			<input type="checkbox" name="kits" value="papelreciclado">Papel Reciclado<br />
+		</fieldset>
+		<label for="mensagem">Mensagem:</label>
+		<textarea cols="60" rows="6" name="mensagem"></textarea>
+		<div id="botoes">
+			<input type="reset" name="btn-cancelar" value="Limpar">
+			<input type="submit" name="btn-enviar" value="Enviar">
+		</div>
+	</form>
+	</article>
+	<footer>
+		<p>Desenvolvido por <a href="https://andorinea.com">andorina</a> em 2022</p> 
+	</footer>
+</body>
+</html>

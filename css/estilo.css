@@ -22,10 +22,18 @@ nav {
 }
 
 a {
-	font: 20px 'Cabin', sans-serif;
+	font: 1.35rem 'Cabin', sans-serif;
+	color: #227C9D;
+	text-decoration:none;
+}
+
+.menu:link, .menu:visited {
 	color: #227C9D;
 	padding: 10px;
-	text-decoration:none;
+}
+
+.menu:hover {
+	color: rgb(23, 195, 178);
 }
 
 article {
@@ -141,6 +149,7 @@ h3 {
 .img-contato {
 	width: 22px;
 	height: 22px;
+	padding: 10px;
 }
 
 #contatos {
@@ -148,14 +157,83 @@ h3 {
 	margin: 8px 0px;
 }
 
+#contatos p {
+	font-weight: 500;
+}
+
 video {
 	width: 600px;
 }
 
 footer {
-	padding: 20px;
+	padding: 16px 0;
 }
 
 footer p {
 	text-align: center;
 }
+
+/* PÁGINA DE CONTATO */
+
+#contato p, #contato h2 {
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+#contato h6 {
+	margin-bottom: 20px;
+}
+
+
+form {
+	width: 500px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 24px;
+	color: #227C9D;
+	font: 1.1rem 'Cabin', sans-serif;
+}
+
+label {
+	font: 1.2rem 'Cabin', sans-serif;
+}
+
+::placeholder {
+	color: #999;
+}
+
+input, select, fieldset, textarea {
+	width: 100%;
+	border: solid 2px #FFCB77;
+	color:#227C9D;
+	border-radius: 4px;
+	margin: 0 0 16px 0;
+	padding: 8px;
+	box-sizing: border-box;
+	font: 1.1rem 'Cabin', sans-serif;
+	background-color: rgba(255, 203, 119, 0.1);
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 20px;
+	margin-left: 10px;
+}
+
+#container-data-hora-aula, #botoes {
+	display: flex;
+}
+
+.elementos-data-hora-aula {
+	margin-right: 10px;
+}
+
+input[type="submit"], input[type="reset"]{
+	border: solid 2px #FFCB77;
+	color:#227C9D;
+	margin: 10px 30px;
+}
+
+input[type="submit"]{
+	background-color: rgba(255, 203, 119, 0.4);
+}
+
