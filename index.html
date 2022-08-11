@@ -5,48 +5,90 @@
 	<meta name="author" content="andorinea" />
 	<meta name="description" content="Papelaria e materiais criativos para um trabalho mais sussa" />
 	<meta name="keywords" content="papelaria,papelaria criativa,canetas,adesivos,bloquinhos,cadernetas,cadernos,planner" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,400;1,500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/estilo.css" rel="stylesheet" type="text/css" >
+
 	<title>Camomila</title>
 </head>
 <body>
-	<!-- comentário -->
-	<img src="img/banner.png" alt="Imagem de flores de camomila" class="banner" />
+	<header>
+		<img src="img/banner.png" alt="Imagem de flores de camomila" id="banner" />
+	</header>
 	<nav>
-		<div class="menu">
-		<ul id="menu-horizontal"> 
-			<li><a href="#">SOBRE</a></li>
-			<li><a href="#">COLEÇÕES</a></li>
-			<li><a href="#">LOJA</a></li>
-			<li><a href="#">CRIE COM A GENTE</a></li>
-		</ul>
-		</div>
+		<a href="index.html">HOME</a>
+		<a href="#sobre">SOBRE</a>
+		<a href="#colecoes">COLEÇÕES</a>
+		<a href="#loja">LOJA</a>
+		<a href="#crie">CRIE COM A GENTE</a>
+		<a href="contato.html">OFICINAS</a>
 	</nav>
-	<h1 class="titulo">Camomila</h1>
-	<p class="subtitulo">Papelaria e materiais criativos para um trabalho mais sussa.</p>
-	<p class="texto">Com uma rotina movimentada, é difícil ter tempo para relaxar e curtir os pequenos prazeres da vida. A Camomila nasceu desse desejo de trazer <strong>pequenas alegrias ao ambiente de trabalho</strong>, com soluções criativas em papelaria e materiais de escritório. Nosso objetivo é despertar a criatividade que está em cada um, além de contribuir para o cotidiano das pessoas, trazendo mais leveza e organização. </p>
-	<p class="texto">Todo trabalho é projetado com muito cuidado e criado <em>artesanalmente</em>, tudo isso para proporcionar a mesma sensação de conforto que uma boa xícara de chá quentinho traz.</p>
-	<hr>
-	<h2 class="subtitulos">Coleções</h2>
-	<p class="texto">Nossa inspiração vem da natureza e das pequenas alegrias da vida, e nossas coleções não poderiam deixar de refletir esse espírito! </p>
-	<ul class="colecoes">
-		<li>Pôr do sol</li>
-		<li>Acordar sem pressa</li>
-		<li>Café fresquinho</li>
-		<li>Dia de preguiça com os pets</li>
-		<li>To do list completa</li>
-	</ul>
-	<hr />
-	<h2 class="subtitulos">Loja</h2>
-	<p class="texto">Bora renovar o escritório ou dar um pouco mais de descontração à rotina? Confira nossa seleção especial de produtos feitos para deixar o dia a dia do trabalho mais criativo e relax.</p>
-	<hr />
-	<h2 class="subtitulos">Crie com a gente</h2>
-	<p class="texto">Aqui na Camomila sabemos o valor do trabalho artesanal. Por isso incentivamos artistas a desenvolverem suas habilidades e criarem com a gente. Já imaginou uma arte sua em um de nossos cadernos? </p>
-	<p class="texto">Confira nossa iniciativa Crie com a gente e saiba como é possível desenvolver sua coleção em parceria com a Camomila.</p> 
-	<p class="texto">Em nosso canal do youtube temos uma série de vídeos curtos, explicando todo o processo e também com dicas para otimizar sua artes para o formato impresso. </p>
-	<p class="texto">Além do youtube, em nossas redes sociais como o instagram estamos constantemente abrindo novas chamadas para artistas, e compartilhamos diversos outros conteúdos criativos. Segue a gente lá!</p>
+	<article>
+		<h1>Camomila</h1>
+		<h6>Papelaria e materiais criativos para um trabalho mais sussa.</h6>
+		<p>Com uma rotina movimentada, é difícil ter tempo para relaxar e curtir os pequenos prazeres da vida. A Camomila nasceu desse desejo de trazer <strong>pequenas alegrias ao ambiente de trabalho</strong>, com soluções criativas em papelaria e materiais de escritório. Nosso objetivo é despertar a criatividade que está em cada um, além de contribuir para o cotidiano das pessoas, trazendo mais leveza e organização. </p>
+		<p>Todo trabalho é projetado com muito cuidado e criado <em>artesanalmente</em>, tudo isso para proporcionar a mesma sensação de conforto que uma boa xícara de chá quentinho traz.</p>
+	</article>
+	<section id="colecoes">
+		<h2>Coleções</h2>
+		<p>Nossa inspiração vem da natureza e das pequenas alegrias da vida, e nossas coleções não poderiam deixar de refletir esse espírito! </p>
+
+		<ul>
+			<li>Pôr do sol</li>
+			<li>Acordar sem pressa</li>
+			<li>Café fresquinho</li>
+			<li>Dia de preguiça com os pets</li>
+			<li>To do list completa</li>
+		</ul>
+	</section>
+	<section id="loja">
+		<h2>Loja</h2>
+		<p>Bora renovar o escritório ou dar um pouco mais de descontração à rotina? Confira nossa seleção especial de produtos feitos para deixar o dia a dia d o trabalho mais criativo e relax.</p>
+		<div id="container">
+			<div class="card">
+				<img class="img-loja" src="img/cadernetas.png" alt="" />
+				<div class="texto-card">
+					<h3>Cadernetas</h3>
+					<p>Feitas artesanalmente com diversas capas e tamanhos diferentes</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="img-loja" src="img/planners.png" alt="" />
+				<div class="texto-card">
+					<h3>Planners</h3>
+					<p>Organize seu dia e acompanhe seu progresso com nossos lindos e divertidos planners</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="img-loja" src="img/bloquinhos.png" alt="" />
+				<div class="texto-card">
+					<h3>Bloquinhos</h3>
+					<p>Para recadinhos e anotações rápidas também temos opções cheias de estilo</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="img-loja" src="img/adesivos.png" alt="" />
+				<div class="texto-card">
+					<h3>Adesivos</h3>
+					<p>Customize seus cadernos e materiais com adesivos de alta qualidade</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="crie">
+		<h2>Crie com a gente</h2>
+		<div class="container-crie">
+			<div id="texto-crie">
+				<p>Aqui na Camomila sabemos o valor do trabalho artesanal. Por isso incentivamos artistas a desenvolverem suas habilidades e criarem com a gente. Já imaginou uma arte sua em um de nossos cadernos? 			Confira nossa iniciativa Crie com a gente e saiba como é possível desenvolver sua coleção em parceria com a Camomila. Em nosso canal do youtube temos uma série de vídeos curtos, explicando todo o processo e também com dicas para otimizar sua artes para o formato impresso.</p>
+				<p>Além do youtube, em nossas redes sociais como o instagram estamos constantemente abrindo novas chamadas para artistas, e compartilhamos diversos outros conteúdos criativos. Segue a gente lá!</p>
+				<div id="contatos">
+				<a href="https://instagram.com" target="_blank"><img src="img/insta.png" class="img-contato" alt="" /></a> <p>@instagram</p>
+				<a href="mailto: email@email.com.br"><img src="img/email.png" class="img-contato" alt="" /></a> <p>email@email.com.br</p>
+				</div>
+			</div>
+			<video src="production_ID_4347781.mp4" width="450" autoplay controls muted loop></video>
+		</div>
+	</section>
+	<footer>
+		<p>Desenvolvido por <a href="https://andorinea.com">andorina</a></p> 
+	</footer>
 </body>
 </html>
